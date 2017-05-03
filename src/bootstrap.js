@@ -1,4 +1,3 @@
-
 /* ============
  * Vue
  * ============
@@ -66,8 +65,11 @@ store.dispatch('auth/check')
  */
 import VueRouter from 'vue-router'
 import routes from './routes'
-
 Vue.use(VueRouter)
+
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
+Vue.use(ElementUI)
 
 export const router = new VueRouter({
   routes
